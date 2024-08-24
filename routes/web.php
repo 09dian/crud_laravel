@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardPostController;
 
-Route::get('/', function () {
-    return view('index');
-});
+
+
+// Route resource untuk DashboardPostController
+Route::resource('/posts', DashboardPostController::class);
